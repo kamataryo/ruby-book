@@ -5,6 +5,7 @@ class ConvertLengthTest < Minitest::Test
 
   def test_m_to_in
     assert_equal 39.37, convert_length(1, from: :m, to: :in)
+    assert_equal 39.37, convert_length(1, to: :m, from: :in)
   end
   
   def test_in_to_m
