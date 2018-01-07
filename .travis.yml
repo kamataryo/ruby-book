@@ -4,4 +4,4 @@ rvm:
   - "2.5.0"
 
 script:
-  - "for file in $(ls ./lib/*test.rb) ; do ruby ${file}; done"
+  - bundle exec rake test
